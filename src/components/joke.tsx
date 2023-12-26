@@ -1,16 +1,18 @@
+import React from "react";
+
 // Define the props interface for the component
-interface TestProps1 {
-	joke: string;
-	categories: string;
+interface Joke {
+  joke: string;
+  categories: string;
 }
 
-const Joke: React.FC<TestProps1> = ({ joke, categories }) => {
-	return (
-		<div>
-			<h2>Joke: {joke}</h2>
-			<p>Categories: {categories}</p>
-		</div>
-	);
+const Joke: React.FC<Joke> = ({ joke, categories }) => {
+  return (
+    <div>
+      <h2>Joke: {joke}</h2>
+      <p>Categories: {categories}</p>
+    </div>
+  );
 };
 
 export default Joke;
